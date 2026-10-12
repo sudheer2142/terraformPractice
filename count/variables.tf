@@ -5,8 +5,19 @@ variable "ami_id" {
 }
 
 variable "instance_name" {
-
     type = list
     default = [ "mongodb","redis","catalouge","payment","shipping","cart","mysql","user","RabbitMq","web"]
+  
+}
+
+variable "zone_id" {
+
+    default = "Z05716582UYT9VEXFS2GH"
+    type = string
+  
+}
+
+variable "domain" {
+    default = "sudheerdev.online"
   
 }
